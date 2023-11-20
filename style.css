@@ -1,0 +1,334 @@
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #header_intro {
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+  }
+.header_intro_div {
+    width: 20%;
+    height: 100%;
+    font-size: 15px;
+    margin-left: 5px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header_intro_div i {
+  font-size: 25px;
+  align-self: center;
+  margin-left: 5px;
+}
+.header_intro_div p {
+  margin: 0;
+  padding-left: 8px;
+}
+#language {
+  height: 100%;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+}
+#language option {
+  background: #2b2b2b;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+}
+#header_intro_button {
+  height: 100%;
+  width: 13vw;
+  border: none;
+  background: #0cc44f;
+  color: white;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  white-space: normal;
+
+}
+
+  #header_navbar {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  #header_navbar h2 {
+    margin: 0.5rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.9;
+  }
+  #header_navbar_list ul {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .body_list {
+    
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 750;
+    text-decoration: none;
+    padding: 0;
+  }
+  #navbar_icon {
+    display: flex;
+    flex-direction: row;
+  }
+  #navbar_icon i {
+    margin: 1.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  #main_body {
+    width: 100%;
+    height: 50vh;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main_body > div > h3 {
+    font-size: 0.7rem;
+    margin: 0;
+    color: #7a7d7b;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 800;
+    text-align: right;
+    letter-spacing: 0.1rem;
+  }
+  #main_body > div > h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 750;
+    letter-spacing: 0.3rem;
+  }
+  #body_button {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .main_body_button {
+    width: 7rem;
+    height: 1.7rem;
+    z-index: 0.5rem;
+    margin: 0 15px;
+    padding: 0 .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #body_button_1 {
+    background: #0cc44f;
+    cursor: pointer;
+  }
+  #body_button_2 {
+    background: #7a7d7b;
+    cursor: pointer;
+  }
+
+  .main_body_button > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 750;
+    font-size: .70rem;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .main_body_button > i {
+    color: white;
+    font-size: 1.3rem;
+    justify-self: end;
+  }
+  
+  #footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #footer > div {
+    margin: 5vh 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .footer_div {
+    padding: 0 4vw;
+  }
+  .footer_div > i {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #0cc44f;
+  }
+  .footer_div > h3 {
+    font-size: 1rem;
+    margin: .4rem 0 0 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #7a7d7b;
+  }
+  .footer_div > p {
+    font-size: .7rem;
+    margin-top: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #7a7d7b;
+
+  }
+
+  @media all and (max-width:700px) {
+    #header {
+      height: 25vh;
+    }
+
+    #header_intro {
+      height: 13vh;
+    }
+    .header_intro_div {
+      width: 19%;
+      font-size: 14px;
+      align-items: center;
+  }
+  .header_intro_div i {
+    font-size: 20px;
+    align-self: center;
+  }
+  .header_intro_div p {
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+  }
+  #header_intro_div_appoint {
+    width: 24%;
+  }
+
+  #header_intro_button {
+    height: 100%;
+    width: 90%;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+    white-space: normal;
+  }
+  #header_navbar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  #header_navbar h2 {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    font-stretch: ultra-expanded;
+  }
+  #header_navbar_list ul {
+    width: 100vw;
+    margin: 5px 0;
+    justify-content: space-evenly;
+  }
+
+  #navbar_icon i {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .body_list {
+    margin: 0 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0;
+  }
+  #footer > div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+ 
+.footer_div {
+  margin-top: 1rem;
+  padding: 0;
+}
+.footer_div > i {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #0cc44f;
+}
+.footer_div > h3 {
+  font-size: 1rem;
+  margin: .4rem 0 0 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #7a7d7b;
+}
+.footer_div > p {
+  font-size: .7rem;
+  margin-top: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #7a7d7b;
+
+}
+
+  }
+
+  @media all and (max-width:500px) {
+    #header {
+      height: 25vh;
+    }
+    #header_intro {
+      height: 12vh;
+    }
+    #header_navbar_list ul {
+      width: 100vw;
+      margin: 4px 0;
+      justify-content: space-around;
+    }
+  }
+  
